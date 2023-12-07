@@ -55,6 +55,7 @@ def show_phone(contacts, name):
     return contacts[name]
 
 
+@input_error
 def show_all(contacts):
     if len(contacts) == 0:
         raise ValueError("No contacts found.")
