@@ -62,20 +62,3 @@ class AddressBook(UserDict):
     def delete(self, name):
         if name in self.data:
             del self.data[name]
-
-
-# Test code example
-# book = AddressBook()
-# john_record = Record("John")
-# john_record.add_phone("1234567890")
-# john_record.add_phone("5555555555")
-# book.add_record(john_record)
-# jane_record = Record("Jane")
-# jane_record.add_phone("9876543210")
-# book.add_record(jane_record)
-# for name, record in book.data.items():
-#     print(record)
-# john_record = book.find("John")
-# print(john_record)
-# john_record.edit_phone("1234567890", "1112223333")
-# print(john_record)
